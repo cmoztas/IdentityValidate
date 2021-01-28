@@ -4,6 +4,6 @@ namespace IdentityValidate.Abstract
 {
     internal interface ICitizenService
     {
-        bool Validate(Citizen citizen);
+        void Validate(Citizen citizen);
     }
 }

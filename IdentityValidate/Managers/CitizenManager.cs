@@ -15,7 +15,7 @@ namespace IdentityValidate.Managers
             _client = client;
         }
 
-        public bool Validate(Citizen citizen)
+        public void Validate(Citizen citizen)
         {
             try
             {
@@ -27,13 +27,10 @@ namespace IdentityValidate.Managers
                 Console.WriteLine( result
                     ? "\nGirilen bilgiler doğrulandı."
                     : "\nGirilen bilgiler doğrulanamadı.");
-
-                return result;
             }
             catch
             {
                 Console.WriteLine("Sistemde bir sorun oluştu.");
-                return false;
             }
         }
     }
