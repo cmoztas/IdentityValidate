@@ -21,9 +21,16 @@ namespace IdentityValidate.Managers
             {
                 Task<TCKimlikNoDogrulaResponse> response = _client.TCKimlikNoDogrulaAsync(citizen.IdentityNumber, citizen.Name, citizen.Surname,
                     citizen.BirthYear);
-                    return response.Result.Body.TCKimlikNoDogrulaResult;
+
+                bool result = response.Result.Body.TCKimlikNoDogrulaResult;
+
+                Console.WriteLine( result
+                    ? "\nGirilen bilgiler doğrulandı."
+                    : "\nGirilen bilgiler doğrulanamadı.");
+
+                return result;
             }
-            catch (Exception e)
+            catch
             {
                 Console.WriteLine("Sistemde bir sorun oluştu.");
                 return false;

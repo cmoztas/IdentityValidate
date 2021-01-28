@@ -24,14 +24,7 @@ namespace IdentityValidate
             Console.Write("Doğum Yılı: ");
             citizen.BirthYear = Convert.ToInt32(Console.ReadLine());
 
-            if (citizenManager.Validate(citizen))
-            {
-                Console.WriteLine("Girilen bilgiler doğrulandı.");
-            }
-            else
-            {
-                Console.WriteLine("Girilen bilgiler doğrulanamadı.");
-            }
+            Console.WriteLine(citizenManager.Validate(citizen));
 
             Console.WriteLine("\nDevam etmek için lütfen enter tuşuna basınız...");
             Console.ReadLine();
