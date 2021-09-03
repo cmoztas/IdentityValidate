@@ -1,4 +1,6 @@
-﻿namespace IdentityValidate.Entities
+﻿using System.Globalization;
+
+namespace IdentityValidate.Entities
 {
     internal class Citizen
     {
@@ -8,13 +10,13 @@
 
         public string Name
         {
-            get => _name.ToUpper();
+            get => _name.ToUpper(CultureInfo.InvariantCulture);
             set => _name = value;
         }
 
         public string Surname
         {
-            get => _surname.ToUpper();
+            get => _surname.ToUpper(CultureInfo.InvariantCulture);
             set => _surname = value;
         }
 
