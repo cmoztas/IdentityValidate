@@ -3,3 +3,6 @@
 TC Kimlik No kontrolü için basit konsol uygulaması
 
 Uygulamaya verilen T.C. no, ad, soyad ve doğum yılı bilgileri ile mernis'ten bilgi doğruluğunu kontrol eder.
+
+
+[![Ashutosh's github activity graph](https://activity-graph.herokuapp.com/graph?username=cmoztas&theme=react-dark)](https://github.com/cmoztas/IdentityValidate)
